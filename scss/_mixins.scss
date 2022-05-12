@@ -1,0 +1,17 @@
+@mixin text($font-weight,$font-size,$line-height,$color) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+
+
+}
+@mixin title {
+    @include text(500,60px,30px,white);
+    text-align: center;
+    padding: 80px 0;
+    @media screen and (max-width:425px) {
+        @include text(500,35px,30px,white);
+        padding: 40px 0;
+    }
+}
