@@ -1,7 +1,7 @@
 $('.center').slick({
    
     slidesToShow: 3,
-   autoplay: true,
+   
     dots: true,
    
     
@@ -9,18 +9,15 @@ $('.center').slick({
       {
         breakpoint: 1440,
         settings: {
-            centerMode:true,
-          arrows:false,
-          slidesToShow: 1,
+          slidesToShow: 2,
           
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 1,
           centerMode:false,
-          arrows:false,
         }
       }
     ]

@@ -525,22 +525,35 @@ body{
         .center{
             max-width: 1400px;
             margin: 0 auto;
-            @media screen and (max-width: 1400px) {
-                max-width: none;
-            }
             &-block{
                 background: url(../img/slider-bg.png) 100% 100% no-repeat;
-                background-size: cover;
+                background-size: contain;
                 background-position: center;
-                max-width: 500px;
-                min-height: 275px;
                 padding: 40px;
-                
                 &__img{
                     width: 48px;
                     height: 48px;
                     overflow: hidden;
                     border-radius: 50%;
+                    @media screen and (max-width: 1440px) {
+                        margin-left: 22%;
+                        
+                    }
+                    @media screen and (max-width: 1024px) {
+                        margin-left: 30%;
+                        
+                    }
+                    @media screen and (max-width: 568px) {
+                        margin-left: 13%;
+                        width: 35px;
+                        height: 35px;
+                        
+                    }
+                    @media screen and (max-width: 375px) {
+                        margin-left: -5%;
+                        
+                        
+                    }
                     img{
                         width: auto;
                         height: 100%;
@@ -550,6 +563,17 @@ body{
                 &__text{
                     @include text(400,22px,26px,white);
                     padding: 20px;
+                    @media screen and (max-width: 1440px) {
+                        max-width: 400px;
+                        margin: 0 auto;
+                        
+                    }
+                    @media screen and (max-width: 568px) {
+                        font-size: 14px;
+                        line-height: 18px;
+                        max-width: 320px;
+                        
+                    }
                 }
             }
         }
