@@ -114,7 +114,6 @@ body{
         }
         &__title{
             @include text(700,120px,120px,black);
-            position: relative;
             @media screen and (max-width:920px) {
                 @include text(700,65px,65px,black);
             }
@@ -654,6 +653,7 @@ body{
                         background-color: #000;
                         @include text(500,25px,30px,white);
                         text-align: center;
+                        border: none;
                     }
                 }
             }
