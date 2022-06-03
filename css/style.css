@@ -191,7 +191,6 @@ body {
   font-size: 120px;
   line-height: 120px;
   color: black;
-  position: relative;
 }
 @media screen and (max-width: 920px) {
   .header .slogan__title {
@@ -996,6 +995,8 @@ body {
   line-height: 30px;
   color: white;
   text-align: center;
+  border: none;
+  border-radius: 20px;
 }
 
 .footer {
@@ -1083,7 +1084,7 @@ body {
 .burger-img:after {
     position: absolute;
     top: 25px;
-    right: 0px;
+    right: 10px;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 30px;

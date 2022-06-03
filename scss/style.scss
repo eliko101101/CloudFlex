@@ -654,6 +654,7 @@ body{
                         @include text(500,25px,30px,white);
                         text-align: center;
                         border: none;
+                        border-radius: 20px;
                     }
                 }
             }
@@ -728,7 +729,7 @@ body{
 .burger-img:after {
     position: absolute;
     top: 25px;
-    right: 0px;
+    right: 10px;
     transform: translate(-50%, -50%);
     width: 30px;
     height: 2px;
